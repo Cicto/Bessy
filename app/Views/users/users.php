@@ -287,17 +287,7 @@
     let dataTables;
     $(document).ready(function () {
         
-        confirm(
-            'Wait!',
-            'Are you sure you want to add this record?', 
-            'warning',
-            false,
-            'GET',
-            $(this).serialize(),
-            function(data){
-                console.log(data)
-            }
-        );
+       
         let _dataTablesObj;
         var target = document.querySelector("#modal-content");
         let blockElement = new KTBlockUI(target, {

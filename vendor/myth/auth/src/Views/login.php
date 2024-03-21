@@ -19,9 +19,9 @@
                     <form action="<?= base_url().route_to('login') ?>" method="post" class = "form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate" id="kt_sign_in_form">
                         <?= csrf_field() ?>
                         <div class="text-center">
-                             <a href="../../demo1/dist/index.html" class="mb-0 mb-lg-12">
-                                <!-- <img alt="Logo" src="<?= base_url()?>/public/assets/media/logos/blink-11.png" class="h-60px h-lg-75px h-l-75px"> -->
-                                HRIS LOGO
+                             <a href="<?= base_url()?>" class="mb-0 mb-lg-12">
+                                <img alt="Logo" src="<?= base_url()?>/public/assets/media/logos/bessy-logo2.png" class="h-60px h-lg-100px h-l-75px">
+                                
                             </a>
                             <!--<h1 class="text-dark fw-bolder mb-3">Sign In</h1> -->
                             <!-- <div class="text-gray-500 fw-semibold fs-6">Your Social Accounts</div> -->

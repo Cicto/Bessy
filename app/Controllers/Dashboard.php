@@ -21,9 +21,21 @@ class Dashboard extends BaseController
         switch ($this->userInformation['data'][0]->role) {
             
             case '1': // System Admin
-                $this->viewData['departments'] = $this->masterModel->get('departments', 'dept_id');
                 return view('dashboards/systemAdmin', $this->viewData);
-                break;
+            break;
+            case '2': // Office Head
+                return view('dashboards/systemAdmin', $this->viewData);
+            break;
+            case '3': // Office Staff
+                return view('dashboards/officeStaff', $this->viewData);
+            break;
+            case '4': // Encoder
+                return view('dashboards/systemAdmin', $this->viewData);
+            break;
+            case '5': // Client
+                return view('dashboards/systemAdmin', $this->viewData);
+            break;
+            
             default:
 
                 $getPassword = $masterModel->get('users', 'password_hash', ['id' => user_id()]);
@@ -42,6 +54,7 @@ class Dashboard extends BaseController
                 }
 
                 break;
+                
         }
     }
 
